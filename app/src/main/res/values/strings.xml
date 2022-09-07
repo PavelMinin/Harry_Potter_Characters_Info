@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Harry Potter Characters Info</string>
+    <string name="search_item">Search</string>
 </resources>
