@@ -37,7 +37,6 @@ class ListFragment : Fragment() {
     }
 
     private var isLoading = false
-    private var currentPage = 0
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -138,27 +137,26 @@ class ListFragment : Fragment() {
     companion object {
         private const val RECYCLER_ITEM_SPACE = 50
 
-        //private const val PAGE_SIZE = 50
         private const val COUNT_TO_LOAD = 15
 
         private const val GENERAL_ERROR_MESSAGE = "Something went wrong"
     }
 }
 
-fun RecyclerView.addHorizontalSpaceDecoration(space: Int) {
-    addItemDecoration(
-        object : RecyclerView.ItemDecoration() {
-            override fun getItemOffsets(
-                outRect: Rect,
-                view: View,
-                parent: RecyclerView,
-                state: RecyclerView.State
-            ) {
-                val position = parent.getChildAdapterPosition(view)
-                if (position != 0 && position != parent.adapter?.itemCount) {
-                    outRect.top = space
-                }
-            }
-        }
-    )
-}
+//fun RecyclerView.addHorizontalSpaceDecoration(space: Int) {
+//    addItemDecoration(
+//        object : RecyclerView.ItemDecoration() {
+//            override fun getItemOffsets(
+//                outRect: Rect,
+//                view: View,
+//                parent: RecyclerView,
+//                state: RecyclerView.State
+//            ) {
+//                val position = parent.getChildAdapterPosition(view)
+//                if (position != 0 && position != parent.adapter?.itemCount) {
+//                    outRect.top = space
+//                }
+//            }
+//        }
+//    )
+//}

@@ -14,7 +14,7 @@ data class HPCharacterDetails(
         val ancestry: String,
         val eyeColour: String,
         val hairColour: String,
-        val wand: Wand,
+//        val wand: Wand,
         val patronus: String,
         val hogwartsStudent: Boolean,
         val hogwartsStaff: Boolean,
@@ -25,8 +25,8 @@ data class HPCharacterDetails(
         val imageUrl: String
         )
 
-data class Wand (
-        val wood: String,
-        val core: String,
-        val length: Double
-        )
+//data class Wand (
+//        val wood: String,
+//        val core: String,
+//        val length: Double
+//        )
